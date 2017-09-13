@@ -15,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		182085A61F69A976006C7BC3 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; name = .swiftlint.yml; path = "../../Dropbox/Software Projects/PGECore/PGECore/.swiftlint.yml"; sourceTree = "<group>"; };
 		18EFA3E41F686C5A001FBD84 /* ACE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ACE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18EFA3E71F686C5A001FBD84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18EFA3E91F686C5A001FBD84 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +39,7 @@
 		18EFA3DB1F686C5A001FBD84 = {
 			isa = PBXGroup;
 			children = (
+				182085A61F69A976006C7BC3 /* .swiftlint.yml */,
 				18EFA3E61F686C5A001FBD84 /* ACE */,
 				18EFA3E51F686C5A001FBD84 /* Products */,
 			);
@@ -74,6 +76,7 @@
 				18EFA3E01F686C5A001FBD84 /* Sources */,
 				18EFA3E11F686C5A001FBD84 /* Frameworks */,
 				18EFA3E21F686C5A001FBD84 /* Resources */,
+				182085A71F69A9B2006C7BC3 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -130,6 +133,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		182085A71F69A9B2006C7BC3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"error: SwiftLint does not exist, download it from https://github.com/realm/SwiftLint\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		18EFA3E01F686C5A001FBD84 /* Sources */ = {
