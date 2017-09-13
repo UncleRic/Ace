@@ -16,6 +16,8 @@
 
 /* Begin PBXFileReference section */
 		182085A61F69A976006C7BC3 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; name = .swiftlint.yml; path = "../../Dropbox/Software Projects/PGECore/PGECore/.swiftlint.yml"; sourceTree = "<group>"; };
+		182085A91F69ABEB006C7BC3 /* AceEditorTemplate.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = AceEditorTemplate.txt; sourceTree = "<group>"; };
+		182085AA1F69ABEB006C7BC3 /* SourceCode.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = SourceCode.html; sourceTree = "<group>"; };
 		18EFA3E41F686C5A001FBD84 /* ACE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ACE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18EFA3E71F686C5A001FBD84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18EFA3E91F686C5A001FBD84 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +38,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		182085A81F69ABEB006C7BC3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				182085A91F69ABEB006C7BC3 /* AceEditorTemplate.txt */,
+				182085AA1F69ABEB006C7BC3 /* SourceCode.html */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		18EFA3DB1F686C5A001FBD84 = {
 			isa = PBXGroup;
 			children = (
@@ -59,6 +70,7 @@
 				18EFA3E71F686C5A001FBD84 /* AppDelegate.swift */,
 				18EFA3E91F686C5A001FBD84 /* MainViewController.swift */,
 				18EFA3EB1F686C5A001FBD84 /* Main.storyboard */,
+				182085A81F69ABEB006C7BC3 /* Resources */,
 				18EFA3EE1F686C5A001FBD84 /* Assets.xcassets */,
 				18EFA3F01F686C5A001FBD84 /* LaunchScreen.storyboard */,
 				18EFA3F31F686C5A001FBD84 /* Info.plist */,
