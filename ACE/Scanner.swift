@@ -7,8 +7,11 @@
 //
 
 import Foundation
+import SwiftScanner
 
 final class SourceText {
+    class func scanSomething() {
+    }
     class func sayHello() -> NSString {
         return "Hello Ric"
     }

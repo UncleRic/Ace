@@ -11,6 +11,9 @@
 		18C14B291F69DBEF001F4182 /* SwiftScanner.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 18C14B271F69DBEF001F4182 /* SwiftScanner.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		18C14B321F69DCF8001F4182 /* ACETests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C14B311F69DCF8001F4182 /* ACETests.swift */; };
 		18C14B3A1F69DD3D001F4182 /* Scanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C14B391F69DD3D001F4182 /* Scanner.swift */; };
+		18C14B3C1F69E13A001F4182 /* SwiftScannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C14B3B1F69E13A001F4182 /* SwiftScannerTests.swift */; };
+		18C14B3D1F69E7C0001F4182 /* SwiftScanner.framework in Resources */ = {isa = PBXBuildFile; fileRef = 18C14B271F69DBEF001F4182 /* SwiftScanner.framework */; };
+		18C14B3F1F69E87C001F4182 /* SwiftScanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C14B271F69DBEF001F4182 /* SwiftScanner.framework */; };
 		18EFA3E81F686C5A001FBD84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EFA3E71F686C5A001FBD84 /* AppDelegate.swift */; };
 		18EFA3EA1F686C5A001FBD84 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EFA3E91F686C5A001FBD84 /* MainViewController.swift */; };
 		18EFA3ED1F686C5A001FBD84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18EFA3EB1F686C5A001FBD84 /* Main.storyboard */; };
@@ -49,6 +52,7 @@
 		18C14B311F69DCF8001F4182 /* ACETests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACETests.swift; sourceTree = "<group>"; };
 		18C14B331F69DCF8001F4182 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18C14B391F69DD3D001F4182 /* Scanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scanner.swift; sourceTree = "<group>"; };
+		18C14B3B1F69E13A001F4182 /* SwiftScannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftScannerTests.swift; sourceTree = "<group>"; };
 		18EFA3E41F686C5A001FBD84 /* ACE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ACE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18EFA3E71F686C5A001FBD84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18EFA3E91F686C5A001FBD84 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18C14B3F1F69E87C001F4182 /* SwiftScanner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,9 +93,17 @@
 			isa = PBXGroup;
 			children = (
 				18C14B311F69DCF8001F4182 /* ACETests.swift */,
+				18C14B3B1F69E13A001F4182 /* SwiftScannerTests.swift */,
 				18C14B331F69DCF8001F4182 /* Info.plist */,
 			);
 			path = ACETests;
+			sourceTree = "<group>";
+		};
+		18C14B3E1F69E87C001F4182 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		18EFA3DB1F686C5A001FBD84 = {
@@ -101,6 +114,7 @@
 				18EFA3E61F686C5A001FBD84 /* ACE */,
 				18C14B301F69DCF8001F4182 /* ACETests */,
 				18EFA3E51F686C5A001FBD84 /* Products */,
+				18C14B3E1F69E87C001F4182 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -213,6 +227,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18C14B3D1F69E7C0001F4182 /* SwiftScanner.framework in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18C14B3C1F69E13A001F4182 /* SwiftScannerTests.swift in Sources */,
 				18C14B321F69DCF8001F4182 /* ACETests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,6 +315,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NFHP7Z5VAQ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ACETests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AmourineTech.ACETests;
@@ -315,6 +335,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NFHP7Z5VAQ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ACETests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AmourineTech.ACETests;
@@ -437,6 +461,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = NFHP7Z5VAQ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -456,6 +481,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = NFHP7Z5VAQ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
