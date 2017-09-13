@@ -3,6 +3,10 @@
 //
 //  Reference:
 //      https://github.com/UncleRic/Ace
+//      malcommac/SwiftScanner:
+//      https://github.com/malcommac/SwiftScanner#installation
+
+//      Ace Stuff:
 //      https://ace.c9.io/#nav=embedding
 //      https://www.youtube.com/watch?v=NGBTRySd1Ys&t=344s
 //      https://www.youtube.com/watch?v=9OYlTa7YP0Y&t=8s
@@ -13,6 +17,7 @@
 
 import UIKit
 import WebKit
+import SwiftScanner
 
 class MainViewController: UIViewController {
     
@@ -24,13 +29,7 @@ class MainViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-           guard let bodypath = Bundle.main.path(forResource: "SourceCode", ofType:"html") else {
-            return
-        }
-        let myURL = URL(fileURLWithPath:bodypath)
-        let myRequest = URLRequest(url: myURL)
-        
-        webView.load(myRequest)
+    
     }
     // -----------------------------------------------------------------------------------------------------
     
