@@ -15,19 +15,25 @@ import UIKit
 import WebKit
 
 class MainViewController: UIViewController {
-
+    
     @IBOutlet weak var webView: WKWebView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
     override func viewDidAppear(_ animated: Bool) {
-    // ... CODE
+           guard let bodypath = Bundle.main.path(forResource: "SourceCode", ofType:"html") else {
+            return
+        }
+        let myURL = URL(fileURLWithPath:bodypath)
+        let myRequest = URLRequest(url: myURL)
+        
+        webView.load(myRequest)
     }
     // -----------------------------------------------------------------------------------------------------
-
+    
     @IBAction func exitAction(_ sender: Any) {
         exit(0)
     }
