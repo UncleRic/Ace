@@ -82,13 +82,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		182085A81F69ABEB006C7BC3 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
 		18C14B301F69DCF8001F4182 /* ACETests */ = {
 			isa = PBXGroup;
 			children = (
@@ -134,7 +127,6 @@
 				18EFA3E91F686C5A001FBD84 /* MainViewController.swift */,
 				18C14B391F69DD3D001F4182 /* Scanner.swift */,
 				18EFA3EB1F686C5A001FBD84 /* Main.storyboard */,
-				182085A81F69ABEB006C7BC3 /* Resources */,
 				18EFA3EE1F686C5A001FBD84 /* Assets.xcassets */,
 				18EFA3F01F686C5A001FBD84 /* LaunchScreen.storyboard */,
 				18EFA3F31F686C5A001FBD84 /* Info.plist */,
